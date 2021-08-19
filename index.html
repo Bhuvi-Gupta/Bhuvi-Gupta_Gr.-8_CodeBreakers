@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Science Made Easy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            font-weight: 300;
+        }
+        .wrap {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 2%;
+            font-family: serif;
+        }
+         /*HEADER starts*/
+          /*header clearfix hack below*/
+        header:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+          /*name starts*/
+        .Name{
+            float: center;
+            text-align: center;
+            color: black;
+        }
+        #Name-name {
+            font-family: "Times New Roman", serif;
+            font-weight: 900;
+            font-size: 50px;
+        }
+        .Name-fontsize {
+            font-family: serif;
+        }
+          /*name ends*/
+          /*logo starts*/
+        .logo img {
+            float: left;
+            margin: 0;
+            width: auto;
+            max-width: 100%;
+            height: auto;
+        }
+          /*logo ends*/
+          /*actual-header-fonting starts*/
+        header {
+            background: url("Banner.jpg");
+            padding: 10px 0;
+            max-width: 100%;
+            min-width: 100%;
+        }
+        
+         /*BODY starts*/
+        body {
+            background-color: white;
+            font-family: serif;
+        }
+        body h3 {
+            font-family: serif;
+        }
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            font-family: serif;
+        }
+         /*BODY ends*/
+        
+        
+         /*FOOTER starts*/
+          /*footer clearfix hack below*/
+        footer:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+          /*actual-footer-fonting starts*/
+        footer {
+            color: white;
+            width: 100%;
+            background-color: darkslategray;
+            padding: 30px 0;
+            margin-top: 60px;
+            font-family: serif;
+        }
+        .footer-email {
+            font-family: serif;
+        }
+        .footer-code{
+            float: left;
+            width: 100%;
+            margin: 1%;
+            text-align: left;
+            color: whitesmoke;
+            font-family: serif;
+        }
+        footer h1{
+            text-align: left;
+            color: whitesmoke;
+            font-family: serif;
+        }
+        footer h3{
+            text-align: left;
+            color: whitesmoke;
+            font-family: serif;
+        }
+        footer h3 a {
+            text-decoration: none;
+            color: crimson;
+            font-family: serif;
+        }
+        footer h3 a:hover {
+            color: goldenrod;
+            font-family: serif;
+        }
+          /*actual-footer-fonting ends*/
+        
+         /*COMING-UP-1 starts*/
+          /*coming-up-1 clearfix hack below*/
+        #Coming-up-1:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+          /*coming-up-1-actual-fonting starts*/
+        #Coming-up-1 li:nth-child(even) {
+            margin-left: 0 0%;
+        }
+        #hComing-up-1 {
+            margin-top: 60px;
+            color: dodgerblue;
+            font-family: serif;
+        }
+        #Coming-up-1 li{
+            float: left;
+            width: 48%;
+            padding: 1%;
+            text-align: center;
+            list-style-type: none;
+            font-family: serif;
+        }
+        
+        #Coming-up-1 li img{
+            height: 55%;
+            width: 55%;
+        }
+        #Coming-up-1 li a:hover img{
+            width: 56%;
+            height: 56%;
+        }
+        #Coming-up-1 h2{
+            font-weight: bold;
+            font-size: 27px;
+        }
+          /*coming-up-1-actual-fonting ends*/
+         /*COMING-UP-1 ends*/
+        
+        
+         /*COMING-UP-2 starts*/
+        #Coming-up-2 {
+            text-align: center;
+            font-size: 40px;
+            color: mediumvioletred;
+            font-family: "Lucida Handwriting",cursive;
+        }
+          /*COMING-UP-2 ends*/
+        
+         /*SLIDER everything starts*/
+        #main-banner {
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+        }
+        #main-banner img {
+            width: 100%;
+        }
+        #slider {
+            overflow: hidden;
+        }
+        #slides {
+            position: relative;
+            width: 500%;
+            height: 500%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 15s slidy infinite;
+        }
+        #slides img {
+            width: 20%;
+            float: left;
+        }
+        @keyframes slidy {
+            0% { left: 0%; }
+            10% { left: 0%; }
+            20% { left: -100%; }
+            30% { left: -100%; }
+            40% { left: -200%; }
+            50% { left: -200%; }
+            60% { left: -300%; }
+            70% { left: -300%; }
+            80% { left: -400%; }
+            90% { left: -400%; }
+            100% { left: 0%; }
+        }
+         /*SLIDER everything ends*/
+    </style>
+    </head>
+    <body>
+        <!--Header Starts-->
+        <div class="logo"><img src="science_logo.png"></a></div>
+        <header>
+            <div class="Name">
+                <h1 id="Name-name"><b>Science Made Easy</b></h1>
+                    <hr style="width:60%;height:3px;border-width:0;color:black;background-color:gray">
+                    <h2><i>Learn Science Concepts With Ease Using Visual Examples</i></h2>  
+            </div>
+        </header>
+        <!--Header Ends-->
+        <!--Banner Starts-->
+        <div id="main-banner">
+            <div id="slider">
+                <div id="slides">
+                    <img src="banner_1.jpg" alt="banner 1">
+                    <img src="banner_2.jpg" alt="banner 2">
+                    <img src="banner_3.jpg" alt="banner 3">
+                    <img src="banner_4.jpg" alt="banner 4">
+                    <img src="banner_5.jpg" alt="banner 5">
+                </div>
+            </div>
+        </div>
+        <!--Banner ends-->
+        <!--Coming-up-1 starts-->
+        <div class="wrap">
+            <section id="Coming-up-1">
+                <hr style="width:95%;height:3px;border-width:0;color:black;background-color:gray">
+                <h3 id="Coming-up-2">Science Concepts</h3>
+                <ul>
+                    <li>
+                        <h2>Newton's Cradle</h2>
+                        <h3>Click on the below image to view Newton's Cradle</h3>
+                        <a href="https://bhuvi-gupta.github.io/Newtons_Cradle/" target="_blank"><img src="cradle.png"></a>
+                        <h3>Also known as the Executive Ball Clicker, Newton's Cradle works on the principle of Conservation of Momentum(mass times speed). This law states that when two objects collide, the momentum of those objects before the collision is the same as after it.</h3>
+                        <h3>In simpler terms, when the first ball collides with the second one, the momentum is passed on from one ball to another till the last ball. Then, the last ball oscillates and passes the momentum back to the previous ball and the momentum reaches the first ball again.<h3>
+                    </li>
+                    <li>
+                        <h2>Double Pendulum</h2>
+                        <h3>Click on the below image to view Double Pendulum</h3>
+                        <a href="https://bhuvi-gupta.github.io/Double_Pendulum/" target="_blank"><img src="double_pendulum.png"></a>
+
+                        <h3>At smaller angles, the double pendulum works on the principle of sine and cosine*. At larger angles, the first pendulum is dragging a weight along with it until the momentum slows down.</h3>
+                        <h3>*(in trigonometry)Sine is the ratio of opposide upon hypotenuse. Cosine is the ratio of adjacent side upon hypotenuse.</h3>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!--Coming-up-1 ends-->
+        <!--Footer starts-->
+        <footer>
+            <div class="wrap">
+                <div class="footer-code">
+                    <h1>Science Made Easy</h1> 
+                    <h3>Science Concepts for all grades</h3>
+                    <div class="footer-email">
+                        <h3>Email Address: science.concepts@sciencemadeeasy.com</h3>
+                        <h3>Phone number: +91 12345 67890</h3>
+                        <h3>Website designed and developed by Bhuvi Gupta.</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Footer ends-->
+    </body>
+</html>
